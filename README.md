@@ -1,5 +1,5 @@
 # Discord Nitro Generator And Checker
-
+Choose Between The nitro.zip or the nitrogen.py
 
 ### How to Run
 Run with windows cmd 
