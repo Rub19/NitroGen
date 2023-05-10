@@ -3,12 +3,12 @@ import random
 import string
 
 
-print("This is discord nitro code generator and checker made with python. This will generate nitro codes and checks if the code is valid or not. If code is valid then it will print the code leaving 2 lines and if not then it will print '*'.\n\n\n")
-num = int(input('Input How Many Codes to Generate and Check:\n'))
+print("Ceci est un générateur de code nitro discord fais un python est aussi un checker .\n\n\n")
+num = int(input('Combien de code voulais vous crée :\n'))
 
 
 with open("Nitro Codes.txt", "w", encoding='utf-8') as file:
-    print("Your nitro codes are being generated, be patient!")
+    print("Vos codes nitro sont en train d'être généré, soyez patient!")
 
     for i in range(num):
         code = "".join(random.choices(
@@ -29,8 +29,8 @@ with open("Nitro Codes.txt") as file:
         r = requests.get(url)
 
         if r.status_code == 200:
-            print(f"\n\n Valid | {nitro}\n\n") #If the nitro code will be valid, it will print nitro code leaving two lines for focus xD.
+            print(f"\n\n Valid | {nitro}\n\n") #si le code nitro est valide cela va l'afficher 
         else:
-            print(f"*", end = "")   #It will print "*" if the nitro code won't be valid.
+            print(f"*", end = "")   #Cela écris "*" si le code est invalide
 
-print("\n\n\nYou have generated codes and checked it succesfuly, hope you got some valid ones")
+print("\n\n\nVous avez généré les code et les checker regardez si vous avez des valides ^^")
